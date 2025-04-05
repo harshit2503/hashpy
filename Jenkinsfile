@@ -13,6 +13,14 @@ pipeline {
             }
         }
 
+        stage('Test Python') {
+    steps {
+        bat 'C:\\Users\\Harsh\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe --version'
+        bat 'where python'
+    }
+}
+
+
         stage('Build') {
     steps {
         bat 'C:\\Users\\Harsh\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m venv venv'

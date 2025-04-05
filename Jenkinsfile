@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/Yash2433/PythAzureApI-.git'
+                git branch: 'master', url: 'https://github.com/harshit2503/hashpy.git'
             }
         }
 

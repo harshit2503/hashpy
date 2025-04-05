@@ -9,15 +9,15 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/harshit2503/hashpy.git'
+                git branch: 'main', url: 'https://github.com/harshit2503/hashpy.git'
             }
         }
 
         stage('Build') {
     steps {
-        bat 'C:\\Users\\yashd\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m venv venv'
-        bat '.\\venv\\Scripts\\activate && C:\\Users\\Harsh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install --upgrade pip'
-        bat '.\\venv\\Scripts\\activate && C:\\Users\\Harsh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install -r requirements.txt'
+        bat 'C:\\Users\\Harsh\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m venv venv'
+        bat '.\\venv\\Scripts\\activate && C:\\Users\\Harsh\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pip install --upgrade pip'
+        bat '.\\venv\\Scripts\\activate && C:\\Users\\Harsh\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pip install -r requirements.txt'
     }
 }
 

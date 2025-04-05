@@ -3,7 +3,7 @@ pipeline {
     environment {
         AZURE_CREDENTIALS_ID = 'azure-service-principal'
         RESOURCE_GROUP = 'harsh-python-resource'
-        APP_SERVICE_NAME = 'python-webapp-service'
+        APP_SERVICE_NAME = 'harsh-python-app'
     }
 
     stages {

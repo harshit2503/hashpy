@@ -15,7 +15,7 @@ pipeline {
 
         stage('Test Python') {
     steps {
-        bat 'C:\\Users\\Harsh\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe --version'
+        bat 'C:\\Python39\\python.exe --version'
         bat 'where python'
     }
 }
